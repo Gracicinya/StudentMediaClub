@@ -5,7 +5,7 @@ All comments including this one were written by a human. -->
 <html lang="en-ca">
 
   <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <title>Student Media Club Recruitment</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,7 +13,15 @@ All comments including this one were written by a human. -->
   <body>
     <header>
       <div id="logo"><a href="home.html">Student Media Club</a></div>
-      <nav>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu">
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="work.html">Our Work</a></li>
@@ -34,9 +42,15 @@ All comments including this one were written by a human. -->
         <p>Join us to be part of a creative and collaborative community where you can learn new skills, make friends, and create amazing content together!</p>
         </section>  
 
-        <section class="application form">
+        <section class="roles-section">
+          <h3>Available Roles</h3>
+          <div id="role-filters"></div>
+          <div id="dynamic-roles"></div>
+        </section>
+
+        <section class="application-form">
         <h3>Application Form</h3>
-        <form action="submit_application.html" method="post">
+        <form id="application-form" action="submit_application.html" method="post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -57,20 +71,20 @@ All comments including this one were written by a human. -->
         </form>
       </section>
 
-        <!-- Contact Us -->
-        <section class="contact">
+        <!-- Contact Information -->
+      <section class="contact">
         <div class="contact-info">
           <h3>Contact Us</h3>
           <p>Email: studentmediaclub@example.com</p><p>or</p><p>DM: @campusstudentmediaclub</p>
         </div>
       </section>
+    </main>
 
     <footer>
       <h3 class="logo">Student Media Club</h3>
       <p class="footer-text">Telling Stories Together, Through Media</p>
       <p>&copy; 2026 Student Media Club. All rights reserved.</p>
     </footer>
-
-    </main>
+    <script src="script.js"></script>
   </body>
 </html>
