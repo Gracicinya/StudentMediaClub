@@ -4,7 +4,7 @@ All comments including this one were written by a human. -->
 <html lang="en-ca">
 
   <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <title>Student Media Club Work</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,7 +12,15 @@ All comments including this one were written by a human. -->
   <body>
     <header>
       <div id="logo"><a href="home.html">Student Media Club</a></div>
-      <nav>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu">
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="work.html">Our Work</a></li>
@@ -93,9 +101,13 @@ All comments including this one were written by a human. -->
             <img src="https://cdn.pixabay.com/photo/2016/04/19/18/15/the-gang-1339272_1280.jpg" alt="Group of people taking a photo" />
           </div>
         </section>
-      <footer>
+      </section>
+    </main>
+    <footer>
       <h3 class="logo">Student Media Club</h3>
       <p class="footer-text">Telling Stories Together, Through Media</p>
       <p>&copy; 2026 Student Media Club. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
+</html>
