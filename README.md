@@ -20,9 +20,8 @@ an about us, gallery, and past/current projects page
 currently, there has not been a deeper dive into 
 
 AI was used for:
-debugging, 
-understanding, implementing, and checking for accessibility
-generating a plan on how to structure the site
+debugging, plannning, understanding, implementantion, commit message generation, and checking for accessibility
+
 
 
 
