@@ -88,6 +88,7 @@ header nav a:hover::after {
 }
 
 .hamburger { 
+  display: none;
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -882,7 +883,12 @@ footer a:hover {
   }
 
   .hamburger {
-    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
   }
 
   
